@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Birthday wishes</title>
+<link rel="stylesheet" href="style.css">
+<script src="fabric.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body class="body_backgorund" onload="new_image();  hideshow();">
+	<center id="whosBday">
+<h1>Birthday Wishes!!!</h1>
+<br><br>
+<h3>Who's birthday is this????</h3>
+<input id="bdayPersonInput">
+<button id="startbtn" onclick="startbday();">Start!!!</button>
+	</center>
+	<center id="bdayWishes">
+		<br><br>
+<h1 class="Name">It's</h1><h1 id="bdayName"></h1><h1 class="Name">'s bday!!!</h1>
+		<canvas id="myCanvas" width="600" height="400"></canvas>
+		<br>
+		<button class="btn btn-warning btn-leg" id="soundbtn" onclick="playsound();"></button>
+	</center>
+	<audio id="myAudio" src="bdayaudio.mp3"></audio>
+	<script src="main.js"></script>
+</body>
+</html>
